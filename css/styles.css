@@ -14,6 +14,7 @@
 }
 body{
     font-family: "Oswald", sans-serif;
+    background-color: var(--colorSecundario);
 }
 /*===================NAVBAR==================*/
 
@@ -100,6 +101,58 @@ header .navbar .nav-link.active {
     background-color: var(--colorTerciario);
     color: var(--colorPrimario);
 }
+/*MAIN de la pagina futbol*/
+.tituloFutbol{
+    color: var(--colorPrimario);
+}
+.figureFutbol{
+    margin: 0;
+    display: inline-block;
+    max-width: 100%;
+}
+.figureFutbol img {
+    display: block;
+}
+.filaFutbol {
+    width: 100%;
+    margin: 0;
+    background-color: var(--colorSecundario);
+}
+.mosaicoProductos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card{
+    background-color: var(--colorPrimario);
+}
+.card .card-body{
+    color: var(--colorSecundario);
+}
+.card-body h5{
+    color: var(--colorTerciario);
+}
+.btn-comprar{
+    background-color: var(--colorTerciario);
+    color: var(--colorPrimario);
+    border-color: var(--colorTerciario);
+}
+@media (min-width: 768px) {
+    .mosaicoProductos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .mosaicoProductos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 
 /*===========================FOOTER================================*/
 footer .accordion .accordion-item {
